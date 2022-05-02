@@ -86,8 +86,10 @@ function sleep(ms) {
 
 function mySuccess(data){
     console.log("mySuccess");
-	var elem = document.getElementsByClassName("page_avatar_img");
-	console.log("src = " + elem.getAttribute("src"));
+	var y = document.getElementsByClassName('page_avatar_img');
+	var aNode = y[0];
+	//var elem = document.getElementsByClassName("page_avatar_img");
+	console.log("y[0] = " + y[0]);
     $("#divPhoto").innerHTML=data;
 }
 
@@ -126,19 +128,9 @@ async function myslider(){
 <body>
 <div id="mesto">
     <button id="btnUpload();" onclick="oclick();">обновить</button>
-    <div id="divPhoto"></div>
-    <!--<p>
-        <label>Локация: </label>
-        <input id="inputLocation" value="локация"></input>
-    </p>
-    <p>
-        <label>Профессия: </label>
-        <input id="inputProfessional" value="профессия"></input>
-    </p>
-    <p>
-        <label>Ситуация: </label>
-        <input id="inputSituation" value="ситуация"></input>
-    </p>-->
+    <div id="divPhoto">
+	    <img id="img_loadmyslider" src=""/>
+	</div>
 </div>
 
 </body>
