@@ -86,6 +86,8 @@ function sleep(ms) {
 
 function mySuccess(data){
     console.log("mySuccess");
+	var elem = document.getElementsByClassName("page_avatar_img");
+	console.log("src = " + elem.getAttribute("src"));
     $("#divPhoto").innerHTML=data;
 }
 
