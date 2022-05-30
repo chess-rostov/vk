@@ -50,7 +50,7 @@ function myRun(){
 
 function getNewUrl(){
     console.log("getNewUrl");
-    let num = getRandomInt(1200);
+    let num = getRandomInt(32453);
     let part = "https://warheroes.ru/hero/hero.asp?Hero_id=";
     let url = part + num;
     console.log("url = " + url);
@@ -103,15 +103,16 @@ async function myslider(){
             if(isRun){
                 await sleep(timerValue);
                 console.log(getNewUrlVk());
+		console.log(getNewUrl());
                 //location.assign(getNewUrlVk());
                 //$.get(getNewUrlVk(), {}, );
-                $.ajax({
+                /*$.ajax({
                     url: getNewUrlVk(),
                     method: 'get',
                     dataType: 'html',
                     data: {}, 
                     success: mySuccess(data)
-                });
+                });*/
                 
             }else{
                 break;
