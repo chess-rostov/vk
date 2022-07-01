@@ -77,8 +77,10 @@ async function myslider(){
             if(isRun){
                 await sleep(timerValue);
                 console.log(getNewUrlVk());
-		/*console.log(getNewUrl());*/
-		mesto.appendChild("<div>+getNewUrl()+</div>");
+		let p = document.createElement("p");
+		p.innerHtml="<div>"+getNewUrl()+"</div>";
+		document.body.appendChild(p);
+		mesto.appendChild(p);
                 
             }else{
                 break;
