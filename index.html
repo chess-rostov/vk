@@ -68,10 +68,10 @@ async function myslider(){
             if(isRun){
                 await sleep(timerValue);
                 console.log(getNewUrlVk());
-		let p = document.createElement("div");
-		p.innerHtml="https://vk.com/id997319";
-		/*document.body.appendChild(p);
-		mesto.appendChild(p);*/
+		let div = document.createElement("div");
+		div.innerHtml="https://vk.com/id997319";
+		document.body.appendChild(div);
+		mesto.appendChild(div);
                 
             }else{
                 break;
