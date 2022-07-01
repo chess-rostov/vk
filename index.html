@@ -63,7 +63,6 @@ function getNewUrlVk(){
     let part = "https://vk.com/id";
     let url = part + num;
     console.log("url = " + url);
-    console.log("url = " + url + "#page_avatar_img");
     return url;
 }
 
@@ -73,24 +72,10 @@ function myfunc() {
     let part = "https://warheroes.ru/hero/hero.asp?Hero_id=";
     let url = part + num;
     console.log("url = " + url);
-    /*location.assign(url);*/
 }
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-/*$.get(getNewUrlVk(), {text: 'Текст'}, function(data){
-	alert(data);
-});*/
-
-function mySuccess(data){
-    console.log("mySuccess");
-	var y = document.getElementsByClassName('page_avatar_img');
-	var aNode = y[0];
-	//var elem = document.getElementsByClassName("page_avatar_img");
-	console.log("data = " + data);
-    $("#divPhoto").innerHTML=data;
 }
 
 async function myslider(){
@@ -104,6 +89,7 @@ async function myslider(){
                 await sleep(timerValue);
                 console.log(getNewUrlVk());
 		/*console.log(getNewUrl());*/
+		mesto.appendChild("<div>"+getNewUrl()+"</div>");
                 
             }else{
                 break;
@@ -112,8 +98,6 @@ async function myslider(){
     }
 
 }
-
-
 
 </script>
 </head>
@@ -130,8 +114,6 @@ async function myslider(){
     
 </style>
 <script>
-    
     myslider();
-    //myRun();
 </script>
 </html>
