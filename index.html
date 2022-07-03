@@ -82,19 +82,16 @@ async function myslider(){
 		console.log('i=', i);
 		
 		div = document.createElement('div');
-		div.innerHTML=word;
+		/*div.innerHTML=word;
 		div.style.value=word;
 		div.innerHTML=words[i];
 		div.style.value=words[i];    
-		console.log(words[i]);
+		console.log(words[i]);*/
 		    
 		var url=getNewUrlVk();
 		urls.push(url);
-		div.innerHTML='<a href="'+url+'">'+url+'</a>';
-		div.style.value='<a href="'+url+'">'+url+'</a>';
-		/* div.style.background='green';
-		div.style.height='100px';
-		div.style.width='300px'; */
+		div.innerHTML='<a target="_blank" href="'+url+'">'+url+'</a>';
+		div.style.value='<a target="_blank" href="'+url+'">'+url+'</a>';
 		console.log(word);
 		mesto.appendChild(div);
                 
