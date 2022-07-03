@@ -74,6 +74,7 @@ async function myslider(){
                 await sleep(timerValue);
                 console.log(getNewUrlVk());
 		i++;
+		console.log('i=',i);
 		let mesto = document.querySelector('#mesto');
 		let div = document.createElement('div');
 		div.innerHtml=word;
@@ -95,14 +96,10 @@ async function myslider(){
 </script>
 </head>
 <body>
-<div id="mesto">
-    <button id="btnUpload();" onclick="oclick();">обновить</button>
-</div>
-
+	<div id="mesto">
+	    <button id="btnUpload();" onclick="oclick();">обновить</button>
+	</div>
 </body>
-<style>
-    
-</style>
 <script>
     myslider();
 </script>
