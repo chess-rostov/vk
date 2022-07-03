@@ -70,7 +70,7 @@ async function myslider(){
     console.log('myslider');
     data = '';
     var isRun = true;
-    var i = 0;
+    var i = -1;
 	mesto = document.querySelector('#mesto');
     if(isRun){
         while (true){
@@ -86,7 +86,10 @@ async function myslider(){
 		div.innerHTML=words[i];
 		div.style.value=words[i];    
 		console.log(words[i]);
-		
+		    
+		var url = getNewUrlVk();
+		div.innerHTML=url;
+		div.style.value=url;
 		/* div.style.background='green';
 		div.style.height='100px';
 		div.style.width='300px'; */
