@@ -67,13 +67,13 @@ async function myslider(){
     console.log('myslider');
     data = '';
     let isRun = true;
-    
+    let i = 0
     if(isRun){
         while (true){
             if(isRun){
                 await sleep(timerValue);
                 console.log(getNewUrlVk());
-
+		i++;
 		let mesto = document.querySelector('#mesto');
 		let div = document.createElement('div');
 		div.innerHtml=word;
@@ -83,7 +83,7 @@ async function myslider(){
 		div.style.height='100px';
 		div.style.width='300px';
 		div.style.left='100px';
-		div.style.top='100px';
+		div.style.top=Number('100px') + i*100;
 		mesto.appendChild(div);
                 
             }else{
