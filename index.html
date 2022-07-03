@@ -73,9 +73,11 @@ async function myslider(){
             if(isRun){
                 await sleep(timerValue);
                 console.log(getNewUrlVk());
-		let div = document.createElement('div');
-		div.innerHtml='<p>https://vk.com/id997319</p>';
+
 		let mesto = document.querySelector('#mesto');
+		let div = document.createElement('div');
+		div.innerHtml='https://vk.com/id997319';
+		div.style.height = '100px';
 		mesto.appendChild(div);
                 
             }else{
