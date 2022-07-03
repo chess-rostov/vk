@@ -38,27 +38,27 @@ function getRandomInt(max) {
 
 function getNewUrl(){
     console.log("getNewUrl");
-    let num = getRandomInt(32453);
-    let part = "https://warheroes.ru/hero/hero.asp?Hero_id=";
-    let url = part + num;
+    var num = getRandomInt(32453);
+    var part = "https://warheroes.ru/hero/hero.asp?Hero_id=";
+    var url = part + num;
     console.log("url = " + url);
     return url;
 }
 
 function getNewUrlVk(){
     console.log("getNewUrlVk");
-    let num = getRandomInt(1000000);
-    let part = "https://vk.com/id";
-    let url = part + num;
+    var num = getRandomInt(1000000);
+    var part = "https://vk.com/id";
+    var url = part + num;
     console.log("url = " + url);
     return url;
 }
 
 function myfunc() {
     console.log("myfunc");
-    let num = getRandomInt(1200);
-    let part = "https://warheroes.ru/hero/hero.asp?Hero_id=";
-    let url = part + num;
+    var num = getRandomInt(1200);
+    var part = "https://warheroes.ru/hero/hero.asp?Hero_id=";
+    var url = part + num;
     console.log("url = " + url);
 }
 
@@ -69,9 +69,9 @@ function sleep(ms) {
 async function myslider(){
     console.log('myslider');
     data = '';
-    let isRun = true;
-    let i = 0;
-
+    var isRun = true;
+    var i = 0;
+	mesto = document.querySelector('#mesto');
     if(isRun){
         while (true){
             if(isRun){
@@ -79,7 +79,7 @@ async function myslider(){
                 console.log(getNewUrlVk());
 		i++;
 		console.log('i=', i);
-		mesto = document.querySelector('#mesto');
+		
 		div = document.createElement('div');
 		div.innerHtml=word;
 		div.style.value=word;
