@@ -70,7 +70,7 @@ async function myslider(){
     let isRun = true;
     let i = 0;
     let mesto = '';
-	let div = '';
+    let div = '';
     if(isRun){
         while (true){
             if(isRun){
@@ -82,9 +82,9 @@ async function myslider(){
 		div = document.createElement('div');
 		div.innerHtml=word;
 		div.style.value=word;
-		div.style.background='green';
+		/* div.style.background='green';
 		div.style.height='100px';
-		div.style.width='300px';
+		div.style.width='300px'; */
 		console.log(word);
 		mesto.appendChild(div);
                 
@@ -101,7 +101,7 @@ async function myslider(){
 <body>
 	<div id="mesto">
 	    <button id="btnUpload" onclick="oclick();">обновить</button>
-		<div>Пресвятая</div>
+	    <div>Пресвятая</div>
 	</div>
 </body>
 <script>
