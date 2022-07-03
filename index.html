@@ -1,6 +1,5 @@
 <html>
 <head>
-<meta>
 <style>
 
 body {
@@ -23,7 +22,7 @@ div {
 <script>
 var timerValue = 2000;
 var data = '';
-var word = "Пресвятая Богородица"
+var word = "Пресвятая Богородица";
 
 function oclick(){
     console.log("oclick");
@@ -80,8 +79,11 @@ async function myslider(){
 		div.innerHtml=word;
 		div.style.value=word;
 		div.style.background='green';
-		div.style.position = 'absolute';
-		div.style.height = '100px';
+		div.style.position='absolute';
+		div.style.height='100px';
+		div.style.width='300px';
+		div.style.left='100px';
+		div.style.top='100px';
 		mesto.appendChild(div);
                 
             }else{
