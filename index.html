@@ -24,6 +24,7 @@ let timerValue = 2000;
 let data = '';
 let word = "Пресвятая Богородица";
 let words = ["slovo", "слово", "Пресвятая Богородица"];
+let urls = [];
 let mesto = '';
 let div = '';
 
@@ -87,7 +88,8 @@ async function myslider(){
 		div.style.value=words[i];    
 		console.log(words[i]);
 		    
-		var url = getNewUrlVk();
+		var url=getNewUrlVk();
+		urls.push(url);
 		div.innerHTML=url;
 		div.style.value=url;
 		/* div.style.background='green';
