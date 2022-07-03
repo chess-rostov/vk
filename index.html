@@ -23,6 +23,7 @@ div {
 <script>
 var timerValue = 2000;
 var data = '';
+var word = "Пресвятая Богородица"
 
 function oclick(){
     console.log("oclick");
@@ -76,8 +77,8 @@ async function myslider(){
 
 		let mesto = document.querySelector('#mesto');
 		let div = document.createElement('div');
-		/*div.innerHtml='https://vk.com/id997319';*/
-		div.style.value='https://vk.com/id997319';
+		div.innerHtml=word;
+		div.style.value=word;
 		div.style.background='green';
 		div.style.height = '100px';
 		mesto.appendChild(div);
