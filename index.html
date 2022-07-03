@@ -81,8 +81,11 @@ async function myslider(){
 		console.log('i=', i);
 		
 		div = document.createElement('div');
-		div.innerHtml=word;
+		div.innerHTML=word;
 		div.style.value=word;
+		div.innerHTML=words[i];
+		div.style.value=words[i];    
+		
 		/* div.style.background='green';
 		div.style.height='100px';
 		div.style.width='300px'; */
