@@ -67,16 +67,18 @@ async function myslider(){
     console.log('myslider');
     data = '';
     let isRun = true;
-    let i = 0
+    let i = 0;
+    let mesto = '';
+	let div = '';
     if(isRun){
         while (true){
             if(isRun){
                 await sleep(timerValue);
                 console.log(getNewUrlVk());
 		i++;
-		console.log('i=',i);
-		let mesto = document.querySelector('#mesto');
-		let div = document.createElement('div');
+		console.log('i=', i);
+		mesto = document.querySelector('#mesto');
+		div = document.createElement('div');
 		div.innerHtml=word;
 		div.style.value=word;
 		div.style.background='green';
